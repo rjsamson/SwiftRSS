@@ -15,7 +15,7 @@ public class RSSFeed: NSObject, NSCoding {
     public var title: String?
     public var link: NSURL?
     
-    public func setLink(let linkString: String!)
+    public func setLink(linkString linkString: String!)
     {
         link = NSURL(string: linkString)
     }

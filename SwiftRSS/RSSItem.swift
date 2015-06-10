@@ -12,7 +12,7 @@ public class RSSItem: NSObject, NSCoding {
     public var title: String?
     public var link: NSURL?
     
-    public func setLink(let linkString: String!)
+    public func setLink(linkString linkString: String!)
     {
         link = NSURL(string: linkString)
     }
@@ -20,7 +20,7 @@ public class RSSItem: NSObject, NSCoding {
     public var guid: String?
     public var pubDate: NSDate?
     
-    public func setPubDate(let dateString: String!)
+    public func setPubDate(dateString dateString: String!)
     {
         pubDate = NSDate.dateFromInternetDateTimeString(dateString)
     }
@@ -31,7 +31,7 @@ public class RSSItem: NSObject, NSCoding {
     // Wordpress specifics
     public var commentsLink: NSURL?
     
-    public func setCommentsLink(let linkString: String!)
+    public func setCommentsLink(linkString linkString: String!)
     {
         commentsLink = NSURL(string: linkString)
     }
@@ -40,7 +40,7 @@ public class RSSItem: NSObject, NSCoding {
     
     public var commentRSSLink: NSURL?
     
-    public func setCommentRSSLink(let linkString: String!)
+    public func setCommentRSSLink(linkString linkString: String!)
     {
         commentRSSLink = NSURL(string: linkString)
     }
